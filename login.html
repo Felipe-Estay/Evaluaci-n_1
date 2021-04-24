@@ -12,54 +12,40 @@
     <script src="js/sweetalert2.all.min.js"></script>
 </head>
 
-<body CLASS="fondo">
+<body>
 
-   
-        <header>
+    <header>
+        <h1 class="icon-cab">ElRayoMakween</h1>
 
-            <div class="contenedor">
 
-                <h1 class="icon-cab">ElRayoMakween</h1>
+    </header>
 
-            </div>
-        </header>
-        <main>
-            <section id="formulario">
+    <form class="fromu-regis" action="" method="post" onsubmit="return ValidarFormu()">
 
-                <form class="fromu-regis" action="" method="post" onsubmit="return ValidarFormu()">
+        <h3 class="from-titulo">Iniciar Seción</h3>
 
-                    <h3 class="from-titulo">Iniciar Seción</h3>
-                    <div class="Contenedor">
+        <div class="Contenedor">
 
-                     
-                    <input class="colum" type="email" name="txtEmail" id="" placeholder="Correo eletrónico" required
-                        minlength="8">
-                   
-                    <input class="colum2" type="password" name="txtPassword" id="" placeholder="Contraseña" required
-                        minlength="5" maxlength="14">
-                
-                  
-                    <input class="boton2" type="submit" value="Volver al menú">
-                    <input class="boton" type="submit" value="Confirmar" onclick="mensaje()">>
-                     
-                    
-                   
-                       
-                    
-                </form>
-                <p><a  href="registro.html">Registrarse</a></p>
-            </section>
-        </main>
+            <input class="colum" type="email" name="txtEmail" id="" placeholder="Correo eletrónico" required
+                minlength="8">
+            <input class="colum2" type="password" name="txtPassword" id="" placeholder="Contraseña" required
+                minlength="5" maxlength="14">
+            <input class="boton2" type="submit" value="Cancelar">
+            <input class="boton" type="submit" value="Confirmar" onclick="mensaje()">
 
-        <footer>
-            <h1 class="icon-cab"></h1>
-        </footer>
+            <p class="claselink"><a href="registro.html">Registrarse</a></p>
+        </div>
+    </form>
 
-        <script src="js/scrip.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-            crossorigin="anonymous"></script>
-    
+    <footer>
+        <h1 class="icon-cab"></h1>
+    </footer>
+
+    <script src="js/scrip.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
