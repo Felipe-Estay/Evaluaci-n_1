@@ -5,12 +5,13 @@
 .fromu-regis{
 
     background-color:  rgb(246, 243, 243);
-    border: solid 3px black;
+    border: solid 2px black;
     width: 95%;
     max-width: 725px;
     margin: auto;
     margin-top: 10%; 
     margin-bottom: 12%;  
+    border-radius: 5px; 
    
     
 }
