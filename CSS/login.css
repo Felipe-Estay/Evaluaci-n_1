@@ -56,14 +56,21 @@ input{
     background-color: green;
     color: white;
     padding: 2% 5% ;
+    cursor: pointer;
 }
 .boton2{
     margin:auto;
     background-color:red;
     color: white;
     padding: 2% 5%;
+    cursor: pointer;
 }
-
+.boton:active{
+    transform: scale(1.05);
+}
+.boton2:active{
+    transform: scale(1.05);
+}
 .claselink{
 width: 100%;
 margin: 10px;
