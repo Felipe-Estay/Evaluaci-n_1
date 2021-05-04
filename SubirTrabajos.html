@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TallerMecanicoRayoMakween</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="CSS/estilosRegister.css">
+  <script src="js/sweetalert2.all.min.js"></script>
+  <script src="JS/jquery-3.6.0.min.js"></script>
+  <script src="dist/jquery.validate.min.js"></script>
+  <script src="js/scrip.js"></script>
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#">
+          <img src="imang/lightning_bolt_042.jpg" alt="" width="35" height="30" class="d-inline-block align-text-top">
+
+        </a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link tetx text-white" href="#">Cerrar Sesión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="Menu2.html">Mis Trabajos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="SubirTrabajos.html">Subir Trabajos</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Buscar Trabajo" aria-label="Search">
+          <button class="btn btn-outline-black" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <form class="fromu-regis" action="" method="post" id="formu" onsubmit="return validar3() ">
+
+    <h3 class="from-titulo">Nueva publicación</h3>
+    <div class="Contenedor">
+
+      <input class="colum" type="text" name="txtmodeloauto" id="modeloauto" placeholder="Modelo del auto">
+      <input class="colum" type="text" name="txtmarcaauto" id="marcaauto" placeholder="Marca del auto">
+      <input class="colum5" type="text" name="txtcolors" id="colors" placeholder="Color">
+      <input class="colum5" type="number" name="numberanio" id="anniomod" placeholder="año del modelo">
+
+      <select class="form-select form-select-sm" aria-label=".form-select-sm example " id="seleccion">
+        <option selected disabled value="0" >Categoria</option>
+        <option value="1">Reparación de motor</option>
+        <option value="2">Restauración</option>
+        <option value="3">Cambio de acite</option>
+        <option value="4">Revisión</option>
+        <option value="5">Reparación de choques</option>
+      </select>
+
+      <label for="formFile" class="form-label colum2">Diagnostico</label>
+      <textarea class="colum" name="txtdiag" id="diag" cols="30" rows="7"></textarea>
+
+      <label for="formFile" class="form-label colum3">Fecha de llegada</label>
+      <label for="formFile" class="form-label colum3">Fecha de retiro</label>
+      <input class="colum3" type="date" name="txtfecha" id="fecha_ini">
+      <input class="colum3" type="date" name="txtfecha" id="fecha_ter">
+
+      <label for="formFile" class="form-label">Materiales</label>
+      <textarea class="colum" name="txtmaterial" id="material" cols="30" rows="7"></textarea>
+
+      <input class="colum4" type="button" value="Valor Dolar" onclick="recuperaDolar()">
+      <div class="colum3" id="valor_dolar"></div>
+      <input type="number" name="nimbermonto" id="montopeso" class="colum" placeholder="$Monto Total en pesos">
+
+      <label for="formFile" class="form-label">Subir foto</label>
+      <input class="colum" type="file" name="txtfoto" id="foto">
+
+
+      <input class="boton colum3" type="submit" value="Confrimar" id="envio" >
+
+    </div>
+  </form>
+  <script>
+    function recuperaDolar() {
+      fetch("https://mindicador.cl/api/dolar")
+        .then(function (response) {
+          // status 200 "OK"
+          if (response.status != 200) {
+            alert("no pudo conectar con el servidor");
+            return;
+          }
+          response.json().then(function (data) {
+            console.log(data);
+            var dolar = data.serie[0].valor;
+            document.getElementById('valor_dolar').innerHTML = dolar;
+          })
+        })
+    }
+  </script>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

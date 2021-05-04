@@ -71,6 +71,14 @@ input{
 .boton2:active{
     transform: scale(1.05);
 }
+.boton:hover{
+    filter: brightness(0.8);
+    transition: 0.5s;
+}
+.boton2:hover{
+    filter: brightness(0.8);
+    transition: 0.5s;
+}
 .claselink{
 width: 100%;
 margin: 10px;

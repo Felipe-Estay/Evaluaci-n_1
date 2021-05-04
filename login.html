@@ -10,6 +10,7 @@
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="CSS/login.css">
     <script src="js/sweetalert2.all.min.js"></script>
+    <script src="JS/jquery-3.6.0.min.js"></script>
     <script src="js/scrip.js"></script>
 </head>
 
@@ -18,21 +19,19 @@
     <header>
         <h1 class="icon-cab">ElRayoMakween</h1>
     </header>
-
-    <form class="fromu-regis" action="" method="post" onsubmit="return validarLogin ()">
+  
+    <form class="fromu-regis" action="Menu2.html" method="post" id="formu" onsubmit="return validar2 ()">
 
         <h3 class="from-titulo">Iniciar Seción</h3>
 
         <div class="Contenedor">
 
-            <input class="colum" type="email" name="txtEmail" id="correid" placeholder="Correo eletrónico" required
-                minlength="8" maxlength="50">
-            <input class="colum2" type="password" name="txtPassword" id="contraid" placeholder="Contraseña" required
-                minlength="5" maxlength="14">
-            <input class="boton2" type="submit" value="Cancelar">
-            <input class="boton" type="submit" value="Confirmar" onclick="">
+            <input class="columv1" type="email" name="txtEmail" id="correid" placeholder="Correo eletrónico">
+            <input class="columv2" type="password" name="txtPassword" id="contraid" placeholder="Contraseña">
+            
+            <input class="boton" type="submit" value="Confirmar" id="boton">
 
-            <p class="claselink"><a href="registro.html">Registrarse</a></p>
+            <p class="claselink">¿No tienes cuenta?<a href="registro.html">Registrate</a></p>
         </div>
     </form>
 
