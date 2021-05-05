@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TallerMecanicoRayoMakween</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="CSS/general.css">
+  <script src="js/sweetalert2.all.min.js"></script>
+  <script src="JS/jquery-3.6.0.min.js"></script>
+  <script src="dist/jquery.validate.min.js"></script>
+  <script src="js/scrip.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <img src="imang/rayo.png" alt="" width="35" height="30" class="d-inline-block align-text-top">
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+       
+        <a class="navbar-brand" href="#">
+        </a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link tetx text-white" href="login.html">Inicio seción</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="registro.html">Crear cuenta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html">Menú</a>
+          </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="Trabajos.html">trabajos</a>
+        </li>
+       
+        </ul>
+        <form class="d-flex">
+            <input class="form-control me-4" type="search" placeholder="Buscar por mecanico" aria-label="Search">
+            <button class="btn btn-outline-black" type="submit">Buscar</button>
+          </form>
+      </div>
+    </div>
+  </nav>
+
+ <main>
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <h1 class=" text-black">¿Quiénes somos?</h1>
+          <div class="col-lg-10 col-md-12 mx-auto">
+            <p class="lead text-black">Somos un taller mecánico,que prestamos servicios de muy buena calidad con personal calificado, reparamos su
+                vehículo a un buen precio y en muy poco tiempo,contáctenos ya</p>
+                <p>
+                  <h3 class=" text-black">Atenciones</h3>
+                  <a href="atencion_meca.html" class="btn btn-primary my-2">Trabajos por mecanico</a>
+                  <a href="atencion_cater.html" class="btn btn-secondary  my-2">Trabajos por categoria</a>
+                </p>
+          </div>
+        </div>
+      </section>
+     
+     <section >
+    <div class="letra">
+    <h3>Nuestros ultimos trabajos</h3>
+    </div>
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+
+      <div class="carousel-item active ">
+          <a href="cadillac.html">
+        <img src="imang/cadillac.jpg" class="d-block w-100" alt="...">
+        </a>
+        <div class="carousel-caption d-none d-md-block ">
+          <h5 >cadillac ElDorado</h5>
+          <p>Restauración </p>
+        
+        </div>
+      </div>
+      <div class="carousel-item">
+        <a href="motor_repa_volv.html">
+        <img src="imang/mecanico 1.jpg" class="d-block w-100" alt="...">
+    </a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Volvo-XC90</h5>
+          <p>Reparación de motor</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <a href="mazda.html">
+        <img src="imang/mecanico 2.jpg" class="d-block w-100" alt="...">
+    </a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Mazda 6</h5>
+          <p>Cambio de aceite</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+  
+</main>
+              
+<div class="separator1"></div>
+<footer class="bg-danger text-center text-white ">
+   
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      Contactenos aqui:
+      <a class="text-white" href="contacto.html">contacto</a>
+    </div>
+   
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+@import url(general.css);
+
+.fromu-regis{
+
+    background-color:  rgb(246, 243, 243);
+    border: solid 2px black;
+    width: 95%;
+    max-width: 725px;
+    margin: auto;
+    margin-top: 10%; 
+    margin-bottom: 12%;  
+    border-radius: 5px; 
+   
+    
+}
+
+.Contenedorv1{
+
+    padding: 60px 40px ;
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+
+.fromu-regis{
+
+    background-color:  rgb(246, 243, 243);
+    border: solid 2px black;
+    width: 95%;
+    max-width: 725px;
+    margin: auto;
+    margin-top: 10%; 
+    margin-bottom: 12%;  
+    border-radius: 5px; 
+   
+    
+}
+.from-titulo{
+    background-color: rgb(170, 166, 166);
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    border-bottom: solid 3px black;
+   
+}
+.Contenedor p{
+width: 100%;
+margin: 10px;
+margin-top: 40px;
+margin-bottom: 40px;
+text-align: center;
+font-size: 25px;
+    
+}
+
+
+
+
+
+ 
+ 
+
+ 

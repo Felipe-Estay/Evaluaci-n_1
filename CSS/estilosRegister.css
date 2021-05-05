@@ -1,4 +1,4 @@
-@import url(fontello.css);
+
 @import url(general.css);
 
 
@@ -32,7 +32,7 @@
     justify-content: space-between;   
 }
 
-input{
+.contenedor input{
     margin-bottom: 20px;
     padding: 15;
     font-size: 16px;
@@ -51,6 +51,19 @@ input{
     margin-bottom: 5%;
     margin-top: 12%;
  }
+ .colum3{
+    width:45%;
+    margin: auto;
+    margin-bottom: 5%;
+    
+ }.colum4{
+     width: auto;
+     margin-bottom: 5%;
+ }
+.colum5{
+    width: 48%;
+    margin-bottom: 5%;
+}
 
 .boton{
     margin:auto;
@@ -59,27 +72,16 @@ input{
     color: white;
     cursor: pointer;
 }
-.boton2{
-    margin:auto;
-    margin-top: 5%;
-    background-color:red;
-    color: white;
-    cursor: pointer;
-}
+
 .boton:active{
     transform: scale(1.05);
 }
-.boton2:active{
-    transform: scale(1.05);
-}
+
 .boton:hover{
     filter: brightness(0.8);
     transition: 0.5s;
 }
-.boton2:hover{
-    filter: brightness(0.8);
-    transition: 0.5s;
-}
+
 .colum{
     width:100%;
     margin-bottom: 5%;
@@ -99,11 +101,4 @@ input{
      padding: 2% 5% ;
      margin-top: 5%;
  }
- .boton2{
-     margin:auto;
-     background-color:red;
-     color: white;
-     padding: 2% 5%;
-     margin-top: 5%;
- }
-
+ 

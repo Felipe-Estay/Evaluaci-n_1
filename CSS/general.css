@@ -1,49 +1,35 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-
 body{
     margin:0;
     background-color:orange;
 }
 
-header{
-    border:solid 2px black;
-    height: 75px;
-    background-color: red;
-    padding: 1%;
-    color: white;
-    
-}
-.icon-cab{
-    color: black;
+h4 {
+    text-align: center;
 }
 
-footer{
-    border:solid 2px black;
-    height: 75px;
-    background-color: red;
-    padding: 1%;
+
+.slide {
+    margin-top: none;
 }
 
-@media screen and (min-width:720px) {
-   
-    #header{
-        border:solid 2px black;
-        height: 150px;
-        background-color: red;
-        padding: 2%;
-        
-        
-    }
-    
-   #footer{
-        border:solid 2px black;
-        height: 150px;
-        background-color: red;
-        padding: 2%;
-    }
-    
+.slide img {
+    height: 90vh;
+    margin-top: auto;
+    border: solid 3px black;
+}
+
+.separator1{
+    margin-top: 80px;
+}
+.letra h3{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.vtr{
+    margin-bottom: 40px;
+    text-align: center;
 }
