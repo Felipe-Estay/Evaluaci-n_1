@@ -327,7 +327,7 @@ function validar3() {
   else if (fechaNueva2 > fechaAct) {
     Swal.fire({
       icon: 'error',
-      title: 'Fecha de entrega no valida',
+      title: 'Fecha de retiro no valida',
       text: 'fecha incorrecta'
     });
     return false;
