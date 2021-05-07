@@ -52,6 +52,7 @@
  }
  .colum3{
     width:45%;
+    
     margin: auto;
     margin-bottom: 5%;
     
@@ -102,6 +103,12 @@
  }
  .ubicar{
      margin: auto;
+ }
+ .ubicar iframe{
+   max-width: 100%;
+     height: auto;
+    
+     
  }
  .ubicar p{
      text-align: center;
