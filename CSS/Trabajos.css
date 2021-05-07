@@ -1,21 +1,4 @@
-
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    border: solid 2px black;
-    background-color: red;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: orange;
-}
-
-
+@import url(general.css);
 
 .col img {
     height: 35vh;
@@ -23,19 +6,16 @@ body {
     border: solid 2px black;
     margin-top: 2px;
 }
+.col img:hover{
+    filter: grayscale(.9);
+}
 .col h2{
-    margin-top: 6%;
+    margin-top: 5%;
 }
 .col p{
-    margin-bottom: 5%;
+    margin-bottom: 15%;
 }
 
-.menu .col a {
-    float: right;
-    margin-left: 5px;
-    margin-bottom: 5px;
-    text-align: center;
-}
 
 .container-fluid {
     text-align: center;

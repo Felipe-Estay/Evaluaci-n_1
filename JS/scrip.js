@@ -91,19 +91,19 @@ function validar() {
     })
     return false;
   }
-  else if (nombre != nombre.trim()) {
+  else if (nombre.trim().length==0) {
     Swal.fire({
       icon: 'error',
       title: 'Oops...',
-      text: 'Ingrese un nombre valido',
+      text: 'El nombre tiene solamente espacios en blancos',
     })
     return false;
   }
-  else if (passw1 != passw1.trim() || passw2 != passw2.trim()) {
+  else if (passw1.trim().length==0 || passw2.trim().length==0) {
     Swal.fire({
       icon: 'error',
       title: 'Oops...',
-      text: 'Contraseña no valida',
+      text: 'Las contraseñas tienen solamente espacios en blancos',
     })
     return false;
   }
@@ -141,11 +141,11 @@ function validar2() {
     })
     return false;
   }
-  else if (contrapas != contrapas.trim()) {
+  else if (contrapas.trim().length == 0) {
     Swal.fire({
       icon: 'error',
       title: 'Oops...',
-      text: 'Contraseña no valida',
+      text: 'La contraseña tienen solamente espacios en blancos',
     })
     return false;
   }
@@ -363,6 +363,46 @@ function validar3() {
     });
     return false;
   }
+  else if (marca.trim().length == 0) {
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'La marca tienen solamente espacios en blancos',
+    })
+    return false;
+  }
+  else if (modelo.trim().length == 0) {
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'El modelo tienen solamente espacios en blancos',
+    })
+    return false;
+  }
+  else if (color.trim().length == 0) {
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'El color tienen solamente espacios en blancos',
+    })
+    return false;
+  }
+  else if (diagnostico.trim().length == 0) {
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'El diagnóstico tienen solamente espacios en blancos',
+    })
+    return false;
+  }
+  else if (material.trim().length == 0) {
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'El espacio material tienen solamente espacios en blancos',
+    })
+    return false;
+  }
   else {
     return true;
   }
@@ -457,6 +497,30 @@ function validar4() {
       icon: 'error',
       title: 'Oops...',
       text: 'Correo no valido',
+    })
+    return false;
+  }
+  else if (nombre2.trim().length == 0) {
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'El nombre tienen solamente espacios en blancos',
+    })
+    return false;
+  }
+  else if (correo2.trim().length == 0) {
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'El correo tienen solamente espacios en blancos',
+    })
+    return false;
+  }
+  else if (comentar.trim().length == 0) {
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'El comentario tienen solamente espacios en blancos',
     })
     return false;
   }

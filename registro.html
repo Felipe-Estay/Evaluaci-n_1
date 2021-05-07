@@ -18,40 +18,44 @@
 <body>
 
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-danger">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <img src="imang/rayo.png" alt="" width="35" height="30" class="d-inline-block align-text-top">
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-       
-        <a class="navbar-brand" href="#">
-        </a>
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link tetx text-white" href="login.html">Inicio seción</a>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <img src="imang/rayo.png" alt="" width="35" height="30" class="d-inline-block align-text-top">
+        
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+         
+          <a class="navbar-brand" href="#">
+          </a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="login.html">Inicio seción</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="registro.html">Crear cuenta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">Menú</a>
+            </li>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="registro.html">Crear cuenta</a>
+            <a class="nav-link text-white" href="Trabajos.html">trabajos</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="index.html">Menú</a>
-          </li>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="Trabajos.html">trabajos</a>
-        </li>
-       
-        </ul>
-        <form class="d-flex">
-            <input class="form-control me-4" type="search" placeholder="Buscar por mecanico" aria-label="Search">
-            <button class="btn btn-outline-black" type="submit">Buscar</button>
-          </form>
+         
+          </ul>
+        
+          <form class="d-flex">
+              <input class="form-control me-4" type="search" placeholder="Buscar por mecanico" aria-label="Search">
+              <button class="btn btn-outline-black" type="submit">Buscar</button>
+            </form>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
   
 
     <form class="fromu-regis" action="" method="post" id="formu" onsubmit="return validar()">
@@ -69,6 +73,7 @@
             <input class="boton" type="submit" value="Confirmar" id="envio">
 
         </div>
+        
     </form>
 
     <footer class="bg-danger text-center text-white ">

@@ -1,7 +1,6 @@
 
 @import url(general.css);
 
-
 .fromu-regis{
 
     background-color:  rgb(246, 243, 243);
@@ -10,7 +9,7 @@
     max-width: 725px;
     margin: auto;
     margin-top: 10%; 
-    margin-bottom: 12%;  
+    margin-bottom: 16%;
     border-radius: 5px; 
    
     
@@ -100,5 +99,13 @@
      color: white;
      padding: 2% 5% ;
      margin-top: 5%;
+ }
+ .ubicar{
+     margin: auto;
+ }
+ .ubicar p{
+     text-align: center;
+     margin-top: 5%;
+     margin-bottom: 5%;
  }
  
