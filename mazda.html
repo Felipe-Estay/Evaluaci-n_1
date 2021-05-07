@@ -33,7 +33,7 @@
           </a>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
             <li class="nav-item">
-              <a class="nav-link text-white" href="login.html">Inicio seción</a>
+              <a class="nav-link text-white" href="login.html">Inicio sesión</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="registro.html">Crear cuenta</a>
@@ -43,9 +43,11 @@
             </li>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="Trabajos.html">trabajos</a>
+              <a class="nav-link text-white" href="Trabajos.html">Trabajos</a>
             </li>
-
+            <li class="nav-item">
+              <div class="nav-link text-white " id="valor_dolar"></div>
+            </li>
           </ul>
 
           <form class="d-flex">
@@ -139,8 +141,8 @@
             
           </ul>
           <p>Costo total: $40.000</p>
-          <input class="colum4" type="button" value="Valor Dolar" onclick="recuperaDolar()">
-           <div class="" id="valor_dolar"></div>
+         
+          
         </div>
       </div>
     </div>
@@ -154,12 +156,12 @@
 
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       Contactenos aqui:
-      <a class="text-white" href="contacto.html">contacto</a>
+      <a class="text-white" href="contacto.html">Contacto</a>
     </div>
 
   </footer>
   <script>
-    function recuperaDolar() {
+    $(document).ready(function() {
       fetch("https://mindicador.cl/api/dolar")
         .then(function (response) {
           // status 200 "OK"
@@ -170,10 +172,10 @@
           response.json().then(function (data) {
             console.log(data);
             var dolar = data.serie[0].valor;
-            document.getElementById('valor_dolar').innerHTML = dolar;
+            document.getElementById('valor_dolar').innerHTML ="Valor del dolar: "+"$"+dolar+" CLP";
           })
         })
-    }
+    })
   </script>
 
 

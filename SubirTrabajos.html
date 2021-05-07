@@ -9,6 +9,10 @@
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="CSS/estilosRegister.css">
     <title>TallerMecanicoRayoMakween</title>
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <script src="dist/jquery.validate.min.js"></script>
+    <script src="js/scrip.js"></script>
 </head>
 
 <body>
@@ -31,6 +35,9 @@
                   </li>
                   <li class="nav-item">
                     <a class="nav-link text-white" href="SubirTrabajos.html">Subir Trabajos</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="nav-link text-white " id="valor_dolar"></div>
                   </li>
                 </ul>
                 <form class="d-flex">
@@ -62,7 +69,7 @@
         <option value="5">Reparación de choques</option>
       </select>
 
-      <label for="formFile" class="form-label colum2">Diagnostico</label>
+      <label for="formFile" class="form-label colum2">Diagnóstico</label>
       <textarea class="colum" name="txtdiag" id="diag" cols="30" rows="7"></textarea>
 
       <label for="formFile" class="form-label colum3">Fecha de llegada</label>
@@ -73,8 +80,6 @@
       <label for="formFile" class="form-label">Materiales</label>
       <textarea class="colum" name="txtmaterial" id="material" cols="30" rows="7"></textarea>
 
-      <input class="colum4" type="button" value="Valor Dolar" onclick="recuperaDolar()">
-      <div class="colum3" id="valor_dolar"></div>
       <input type="number" name="nimbermonto" id="montopeso" class="colum" placeholder="$Monto Total en pesos">
 
       <label for="formFile" class="form-label">Subir foto</label>
@@ -86,7 +91,7 @@
     </div>
   </form>
   <script>
-    function recuperaDolar() {
+    $(document).ready(function() {
       fetch("https://mindicador.cl/api/dolar")
         .then(function (response) {
           // status 200 "OK"
@@ -97,10 +102,10 @@
           response.json().then(function (data) {
             console.log(data);
             var dolar = data.serie[0].valor;
-            document.getElementById('valor_dolar').innerHTML = dolar;
+            document.getElementById('valor_dolar').innerHTML ="Valor del dolar: "+"$"+dolar+" CLP";
           })
         })
-    }
+    })
   </script>
 
 
